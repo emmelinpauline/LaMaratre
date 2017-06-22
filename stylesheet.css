@@ -1,0 +1,368 @@
+@charset "UTF-8";
+/*-----RESET-------*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+/*---------------GENERAL-----------*/
+body {
+  background-color: #272932;
+  /*background-color: #25CED1;
+  background-color: #b6a25d;
+    background-image: url(../lamaratre/img-layout/pattern.jpg);
+         */ }
+
+main {
+  background: #fff;
+  width: 99%;
+  margin: 0 auto;
+  font-family: "Futura", sans-serif; }
+
+/*-------------HEADER-----------*/
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+  header h1 {
+    font-family: 'Sacramento', cursive;
+    text-align: left;
+    font-weight: 100;
+    font-size: 3em;
+    padding-left: 5%;
+    width: 50%;
+    /*    font-size: 500%;*/ }
+  header nav {
+    width: 45%; }
+    header nav ul {
+      display: flex; }
+      header nav ul li {
+        margin-right: 10%;
+        list-style-type: none;
+        text-transform: uppercase;
+        font-weight: 100; }
+        header nav ul li:last-child {
+          margin-right: 0; }
+        header nav ul li a {
+          text-decoration: none;
+          color: black; }
+
+header a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: #DB324D;
+  border-bottom: 2px solid #DB324D; }
+
+/* -----SECTION 2 - PRODUITS ----- */
+/* ----- INDEX FRONT----- */
+section.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15% 0 20% 0; }
+  section.description h2 {
+    font-family: "Futura", sans-serif; }
+  section.description a {
+    display: flex;
+    width: 60%; }
+  section.description span {
+    text-decoration: line-through;
+    color: #DB324D; }
+  section.description div.decouvrir {
+    margin-top: 2%;
+    padding: 1% 3%;
+    border: 1px solid #25ced1; }
+    section.description div.decouvrir:hover {
+      background: #25ced1; }
+    section.description div.decouvrir a {
+      color: #000;
+      text-decoration: none; }
+      section.description div.decouvrir a:hover {
+        color: #fff; }
+
+/*-------------- La maratre -------------*/
+section.maratre {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+  section.maratre article {
+    display: flex;
+    flex-direction: row;
+    background: #25ced1; }
+    section.maratre article:last-child {
+      display: flex;
+      flex-direction: row-reverse; }
+    section.maratre article .text-description {
+      padding-left: 4%;
+      width: 60%; }
+    section.maratre article img {
+      height: auto;
+      width: 100%; }
+
+/* ----- INDEX FRONT----- */
+.w40 {
+  width: 40%;
+  float: left;
+  margin: 0; }
+
+.w60 {
+  width: 60%;
+  float: right; }
+
+h4 {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 100;
+  font-family: "Futura", sans-serif;
+  font-size: 20px; }
+
+article.w60 p {
+  padding: 5%;
+  line-height: 2em;
+  font-weight: 100; }
+
+/*---------- filtre ----------*/
+nav.filtres {
+  width: 100%;
+  padding-bottom: 4%; }
+  nav.filtres .ulfiltres {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    width: 60%;
+    margin: 0 auto; }
+    nav.filtres .ulfiltres .filtreli {
+      width: 20%;
+      margin: 0 auto;
+      list-style: none;
+      padding-bottom: 6%;
+      border-right: 5px solid #25ced1;
+      height: 30px; }
+      nav.filtres .ulfiltres .filtreli:last-child {
+        border: none; }
+      nav.filtres .ulfiltres .filtreli a {
+        display: flex;
+        align-content: center;
+        color: #000;
+        font-size: 1.5em;
+        font-weight: 100;
+        text-decoration: none; }
+        nav.filtres .ulfiltres .filtreli a:last-child {
+          border-right: none; }
+        nav.filtres .ulfiltres .filtreli a:hover {
+          color: #25ced1;
+          text-decoration: none; }
+
+/*---------- PAGE PRODUIT -------------------*/
+.bouton {
+  border-radius: 2%;
+  margin-top: 5%;
+  display: block;
+  margin-left: 45%;
+  padding: 10px;
+  font-family: 'Oswald', cursive;
+  font-weight: 100;
+  color: white;
+  background-color: #b6a25d; }
+
+/*---------- PAGE PRODUITS / Choix ----------*/
+h3#choix {
+  text-align: center;
+  color: #DB324D;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  font-size: 2em;
+  margin-bottom: 6%; }
+
+section.produits {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  flex-wrap: wrap; }
+  section.produits article {
+    display: flex;
+    flex-direction: column;
+    width: 33%; }
+    section.produits article img {
+      width: 80%; }
+    section.produits article h3.nom a {
+      text-decoration: none;
+      text-transform: none;
+      text-align: center;
+      margin-top: 30px;
+      font-weight: 100;
+      color: #000; }
+      section.produits article h3.nom a:hover {
+        color: #25ced1; }
+    section.produits article article a {
+      text-decoration: none;
+      display: flex; }
+
+/*-------------- Grille --------------------*/
+.wfull {
+  float: left;
+  width: 100%; }
+
+.w33 {
+  float: left;
+  width: 33%; }
+
+.w25 {
+  float: left;
+  width: 25%; }
+
+.w20 {
+  float: left;
+  width: 20%; }
+
+.w75 {
+  float: left;
+  width: 60%; }
+
+.w33:nth-child(3n+1) {
+  clear: both; }
+
+.popi {
+  width: 33%;
+  float: left;
+  display: inline-block;
+  margin: 0 auto; }
+
+.popi p {
+  padding: 4%;
+  text-align: justify;
+  font-weight: 100; }
+
+/*------------- PAGE DEDIEE PRODUIT -------------------*/
+.detail {
+  float: left; }
+
+.leproduit {
+  float: left; }
+
+.lenom {
+  font-family: 'Oswald', cursive;
+  font-size: 20px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  padding-left: 13%; }
+
+p.w75.description {
+  line-height: 1.5em; }
+
+/*------------- Page Quesaco ---------------*/
+.titre-quesaco {
+  text-align: center;
+  margin-top: 30%;
+  margin-left: 30px; }
+
+.kesakoko {
+  padding: 5%;
+  text-align: center; }
+
+em {
+  color: #999999; }
+
+/*------------- Page Témoignages  ---------------*/
+.lestemoignages {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px; }
+
+.lescommentaires {
+  width: 65%;
+  height: 50%;
+  float: left;
+  font-family: 'Oswald', cursive;
+  font-weight: 100;
+  background-color: #b6a25d; }
+
+.lescommentaires thead {
+  background-color: white;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 100; }
+
+.lescommentaires th {
+  letter-spacing: 3px; }
+
+th#nom {
+  width: 25%; }
+
+th#temoignage {
+  width: 75%; }
+
+.lescommentaires td {
+  font-size: 13px; }
+
+.formulaire {
+  float: right;
+  padding-right: 50px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 40px; }
+
+.titre {
+  padding-top: 40px; }
+
+.submit {
+  background-color: #b6a25d;
+  padding: 10px 70px;
+  color: white;
+  font-family: 'Oswald', cursive;
+  font-size: 16px; }
+
+/*-------------- Footer -------------*/
+footer {
+  /*    margin-top: 100px;*/
+  padding: 24px 22px 0 22px;
+  width: 100%;
+  clear: both;
+  float: left;
+  height: 100px;
+  background-color: white;
+  border-top: 2px solid #b6a25d;
+  font-weight: 100;
+  font-size: 14px;
+  font-family: 'Oswald', cursive;
+  color: #b6a25d; }
+
+.footer #footer-social img {
+  margin-left: 10px; }
+
+.footer #footer-ideas {
+  margin-top: 10px; }
+
+/*---------- MEDIA QUERIES ----------*/
+@media screen and (max-width: 600px) {
+  .footer,
+  .w33,
+  .w75,
+  .wfull,
+  .w25,
+  .w50,
+  .container {
+    float: none;
+    width: 100%; }
+
+  h1 {
+    font-size: 200%; } }
+
+/*# sourceMappingURL=stylesheet.css.map */

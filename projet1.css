@@ -1,0 +1,191 @@
+charset "utf-8";
+
+/*-----RESET-------*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/*-----GENERAL-------*/
+
+body {
+    background-image: url(img/pattern.png);
+}
+
+main {
+    background: white;
+    width: 72.3%;
+    margin: 0 auto;
+    font-family: 'Oswald', cursive;
+}
+
+
+/*--------HEADER-------*/
+
+header h1 {
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    font-weight: 100;
+    width: 100%;
+    float: left;
+}
+
+.logo {
+    display: block;
+    float: left;
+    width: auto;
+    align-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+.icone2 {
+    position: absolute;
+    top: 10px;
+    right: 200px;
+}
+
+.icone1 {
+    position: absolute;
+    top: 10px;
+    right: 250px;
+}
+
+
+/*....section...Cactus...*/
+
+.cactus {
+    margin-top: 100px;
+}
+
+.cactus h1 {
+    margin-left: 100px;
+}
+
+
+/*....section...Content...*/
+
+.panier {
+    float: left;
+}
+
+.content {
+    position: relative;
+}
+
+.content p {
+    position: absolute;
+    top: 50px;
+    left: 280px;
+}
+
+.prix {
+    position: absolute;
+    top: 200px;
+    right: 550px;
+}
+
+.plus {
+    position: absolute;
+    top: 250px;
+    right: 550px;
+}
+
+.content em {
+    position: absolute;
+    top: 300px;
+    right: 525px;
+}
+
+.fleche {
+    position: absolute;
+    top: 450px;
+    right: 570px;
+}
+
+.content h4 {
+    position: absolute;
+    top: 400px;
+    right: 500px;
+}
+
+
+/*......Projet2........*/
+
+
+/*.....Section Milieu......*/
+
+.titre {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.titre h2 {
+    color: rgb(201, 167, 43);
+}
+
+
+/*...case cocher....*/
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.apl h2 {
+    border: 2px solid black;
+    width: 180px;
+    margin-left: 370px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/*.....les images....*/
+
+
+/*
+.image {
+    display: flex;
+    justify-content: space-around;
+}
+*/
+
+article {
+    display: block;
+    float: left;
+    max-width: 100%;
+    width: auto;
+}
+
+.w33 {
+    float: left;
+    width: 33%;
+}
+
+.wfull {
+    float: left;
+    width: 100%
+}
